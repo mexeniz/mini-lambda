@@ -6,3 +6,4 @@ resources:
 - knative-operator.yaml
 - knative-serving.yaml
 - simple-app.yaml
+- tekton.yaml
