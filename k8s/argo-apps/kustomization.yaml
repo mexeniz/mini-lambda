@@ -5,3 +5,4 @@ resources:
 - istiod.yaml
 - knative-operator.yaml
 - knative-serving.yaml
+- simple-app.yaml
