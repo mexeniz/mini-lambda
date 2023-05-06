@@ -5,5 +5,6 @@ resources:
 - istiod.yaml
 - knative-operator.yaml
 - knative-serving.yaml
+- lambda.yaml
 - simple-app.yaml
 - tekton.yaml
