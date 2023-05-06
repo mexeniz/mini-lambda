@@ -8,7 +8,7 @@ created: 2023-05-06T22:58:04.784987364+07:00
 build: git                                          
 git:
   url: https://github.com/mexeniz/mini-lambda.git   # required, git repository with the function source code
-  revision: feat/kn-function
+  revision: develop
   contextDir: k8s/lambda/lambda-func
 run:
   volumes: []
