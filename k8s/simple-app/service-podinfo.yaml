@@ -5,6 +5,10 @@ metadata:
   namespace: simple-app
 spec:
   template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/min-scale: "0"
+        autoscaling.knative.dev/max-scale: "20"
     spec:
       containers:
         - image: stefanprodan/podinfo:6.3.6
