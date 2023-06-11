@@ -6,6 +6,9 @@ metadata:
 spec:
   version: "1.9.3"
   config:
+    domain:
+      lambda.mini: |
+
     istio:
       gateway.knative-serving.knative-ingress-gateway: "istio-ingressgateway.istio-ingress.svc.cluster.local"
       local-gateway.knative-serving.knative-local-gateway: "knative-local-gateway.istio-system.svc.cluster.local"
