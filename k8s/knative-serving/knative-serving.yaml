@@ -5,3 +5,7 @@ metadata:
   namespace: knative-serving
 spec:
   version: "1.9.3"
+  config:
+    istio:
+      gateway.knative-serving.knative-ingress-gateway: "istio-ingressgateway.istio-ingress.svc.cluster.local"
+      local-gateway.knative-serving.knative-local-gateway: "knative-local-gateway.istio-ingress.svc.cluster.local"

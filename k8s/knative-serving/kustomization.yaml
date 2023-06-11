@@ -4,4 +4,3 @@ resources:
 - _namespace.yaml
 - knative-serving.yaml
 - peer-authentication.yaml
-- net-istio.yaml
