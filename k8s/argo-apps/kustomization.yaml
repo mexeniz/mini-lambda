@@ -3,6 +3,7 @@ kind: Kustomization
 resources:
 - istio-base.yaml
 - istiod.yaml
+- istio-ingress.yaml
 - knative-operator.yaml
 - knative-serving.yaml
 - lambda.yaml
