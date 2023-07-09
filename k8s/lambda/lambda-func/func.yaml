@@ -1,7 +1,7 @@
 specVersion: 0.35.0
 name: lambda-func
 runtime: python
-registry: ""
+registry: docker.io/munix
 image: ""
 imageDigest: ""
 created: 2023-05-06T22:58:04.784987364+07:00

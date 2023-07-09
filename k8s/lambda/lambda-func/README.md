@@ -4,6 +4,12 @@ Welcome to your new Python function project! The boilerplate function
 code can be found in [`func.py`](./func.py). This function will respond
 to incoming HTTP GET and POST requests.
 
+## Deploy
+Target namespace should not labeled with istio injection
+```
+kn func deploy --registry docker.io/munix --remote --namespace lambda2
+```
+
 ## Endpoints
 
 Running this function will expose three endpoints.
