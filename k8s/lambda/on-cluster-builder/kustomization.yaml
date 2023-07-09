@@ -2,6 +2,6 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
 - https://raw.githubusercontent.com/tektoncd/catalog/master/task/git-clone/0.4/git-clone.yaml
-- https://raw.githubusercontent.com/knative-sandbox/kn-plugin-func/main/pkg/pipelines/resources/tekton/task/func-buildpacks/0.1/func-buildpacks.yaml
-- https://raw.githubusercontent.com/knative-sandbox/kn-plugin-func/main/pkg/pipelines/resources/tekton/task/func-deploy/0.1/func-deploy.yaml
+- https://github.com/knative/func/releases/download/knative-v1.10.1/func-buildpacks.yaml
+- https://github.com/knative/func/releases/download/knative-v1.10.1/func-deploy.yaml
 - builder-rbac.yaml
