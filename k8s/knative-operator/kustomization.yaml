@@ -3,4 +3,4 @@ kind: Kustomization
 namespace: knative-operator
 resources:
 - _namespace.yaml
-- https://github.com/knative/operator/releases/download/knative-v1.10.0/operator.yaml
+- https://github.com/knative/operator/releases/download/knative-v1.10.2/operator.yaml
