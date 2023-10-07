@@ -8,10 +8,10 @@ spec:
     metadata:
       annotations:
         autoscaling.knative.dev/min-scale: "0"
-        autoscaling.knative.dev/max-scale: "20"
+        autoscaling.knative.dev/max-scale: "5"
     spec:
       containers:
-        - image: jimmysong/knative-samples-helloworld-go@sha256:5ea96ba4b872685ff4ddb5cd8d1a97ec18c18fae79ee8df0d29f446c5efe5f50
+        - image: jimmysong/knative-samples-helloworld-go:latest
           env:
             - name: TARGET
-              value: "Go Sample v1"
+              value: "Mini Lambda v1"
