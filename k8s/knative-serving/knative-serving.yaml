@@ -9,6 +9,8 @@ spec:
     domain:
       lambda.mini: |
 
+    features:
+      tag-header-based-routing: "enabled"
     istio:
       gateway.knative-serving.knative-ingress-gateway: "istio-ingressgateway.istio-ingress.svc.cluster.local"
       local-gateway.knative-serving.knative-local-gateway: "knative-local-gateway.istio-system.svc.cluster.local"
