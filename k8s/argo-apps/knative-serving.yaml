@@ -2,20 +2,18 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   annotations:
-    argocd.argoproj.io/sync-wave: "2"
-  name: istiod
+    argocd.argoproj.io/sync-wave: "4"
+  name: knative-serving
   namespace: argocd
 spec:
   project: default
   source:
-    chart: istiod
-    repoURL: https://istio-release.storage.googleapis.com/charts
-    targetRevision: 1.17.1
-    helm:
-      releaseName: istiod
+    repoURL: https://github.com/mexeniz/mini-lambda
+    targetRevision: main
+    path: k8s/knative-serving
   destination:
     server: https://kubernetes.default.svc
-    namespace: istio-system
+    namespace: knative-serving
   syncPolicy:
     automated:
       prune: true

@@ -2,21 +2,23 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   annotations:
-    argocd.argoproj.io/sync-wave: "2"
-  name: istiod
+    argocd.argoproj.io/sync-wave: "3"
+  name: istio-ingress
   namespace: argocd
 spec:
   project: default
   source:
-    chart: istiod
+    chart: gateway
     repoURL: https://istio-release.storage.googleapis.com/charts
     targetRevision: 1.17.1
     helm:
-      releaseName: istiod
+      releaseName: istio-ingressgateway
   destination:
     server: https://kubernetes.default.svc
-    namespace: istio-system
+    namespace: istio-ingress
   syncPolicy:
     automated:
       prune: true
       selfHeal: true
+    syncOptions:
+      - CreateNamespace=true

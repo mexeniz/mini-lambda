@@ -1,0 +1,22 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: hellolambda
+  namespace: simple-app
+spec:
+  traffic:
+    - latestRevision: true
+      percent: 50
+    - revisionName: hellolambda-00001
+      percent: 50
+      tag: awesome-revision
+  template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/max-scale: "5"
+    spec:
+      containers:
+        - image: jimmysong/knative-samples-helloworld-go:latest
+          env:
+            - name: TARGET
+              value: "Mini Lambda v2"
