@@ -9,7 +9,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/mexeniz/mini-lambda
-    targetRevision: develop
+    targetRevision: main
     path: k8s/knative-serving
   destination:
     server: https://kubernetes.default.svc
