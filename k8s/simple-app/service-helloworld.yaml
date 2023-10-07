@@ -14,4 +14,4 @@ spec:
         - image: jimmysong/knative-samples-helloworld-go:latest
           env:
             - name: TARGET
-              value: "Mini Lambda v1"
+              value: "Go Sample v1"
