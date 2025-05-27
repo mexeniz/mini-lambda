@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  annotations:
+    argocd.argoproj.io/sync-wave: "4"
+  name: knative-eventing
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/mexeniz/mini-lambda
+    targetRevision: feat/knative-eventing-operator
+    path: k8s/knative-eventing
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: knative-eventing
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
