@@ -1,0 +1,9 @@
+# Ref: https://knative.dev/docs/install/installing-istio/#using-istio-mtls-feature-with-knative
+apiVersion: security.istio.io/v1beta1
+kind: PeerAuthentication
+metadata:
+  name: default
+  namespace: knative-eventing
+spec:
+  mtls:
+    mode: PERMISSIVE
