@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/mexeniz/mini-lambda
-    targetRevision: develop
+    targetRevision: feat/knative-eventing-operator
     path: k8s/argo-apps
   destination:
     server: https://kubernetes.default.svc
