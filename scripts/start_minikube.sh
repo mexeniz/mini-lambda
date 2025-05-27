@@ -1,7 +1,7 @@
 #/bin/bash
-# Work with minkube v1.29.0
+# Work with minkube v1.35.0
 
-K8S_VERSION="v1.26.4"
+K8S_VERSION="v1.32.3"
 
 PROFILE="lambda"
 N_NODE="1"
