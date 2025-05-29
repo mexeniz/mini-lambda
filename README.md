@@ -16,6 +16,14 @@ cd ./scripts
 - https://argo-cd.readthedocs.io/en/stable/getting_started/
 - CLI: [argocd](https://argo-cd.readthedocs.io/en/stable/cli_installation/)
 
+### Useful commands
+
+```bash
+argocd admin initial-password -n argocd
+argocd login localhost:8080
+argocd account update-password --account admin
+```
+
 ## KNative Functions
 
 ### Required tools
