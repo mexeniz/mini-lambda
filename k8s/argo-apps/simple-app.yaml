@@ -9,7 +9,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/mexeniz/mini-lambda
-    targetRevision: main
+    targetRevision: feat/eventing-simple-app
     path: k8s/simple-app
   destination:
     server: https://kubernetes.default.svc

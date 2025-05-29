@@ -9,7 +9,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/mexeniz/mini-lambda
-    targetRevision: feat/knative-eventing-operator
+    targetRevision: develop
     path: k8s/knative-eventing
   destination:
     server: https://kubernetes.default.svc
