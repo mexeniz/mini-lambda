@@ -4,4 +4,3 @@ metadata:
   annotations:
     eventing.knative.dev/broker.class: MTChannelBasedBroker
   name: default
-  namespace: simple-app

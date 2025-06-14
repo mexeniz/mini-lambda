@@ -1,0 +1,14 @@
+apiVersion: eventing.knative.dev/v1
+kind: Trigger
+metadata:
+  name: ce-viewer
+spec:
+  broker: default
+  filters:
+    exact:
+      type: dev.lambda.mini
+  subscriber:
+    ref:
+      apiVersion: serving.knative.dev/v1
+      kind: Service
+      name: ce-viewer

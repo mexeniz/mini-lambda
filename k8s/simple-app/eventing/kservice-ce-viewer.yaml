@@ -1,8 +1,7 @@
 apiVersion: serving.knative.dev/v1
 kind: Service
 metadata:
-  name: ce-viewerC
-  namespace: simple-app
+  name: ce-viewer
 spec:
   template:
     metadata:
