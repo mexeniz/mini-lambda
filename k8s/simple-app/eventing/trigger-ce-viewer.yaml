@@ -5,8 +5,8 @@ metadata:
 spec:
   broker: default
   filters:
-    exact:
-      type: dev.lambda.mini
+    - exact:
+        type: dev.lambda.mini
   subscriber:
     ref:
       apiVersion: serving.knative.dev/v1
