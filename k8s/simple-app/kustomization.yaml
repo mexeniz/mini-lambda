@@ -3,6 +3,6 @@ kind: Kustomization
 namespace: simple-app
 resources:
 - _namespace.yaml
-- service-helloworld.yaml
-- service-podinfo.yaml
-- eventing
+- kservice-helloworld.yaml
+- kservice-podinfo.yaml
+- ./eventing
