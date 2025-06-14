@@ -4,5 +4,5 @@ resources:
 - broker-default.yaml
 - deployment-ce-player.yaml
 - kservice-ce-viewer.yaml
-- service-ce-player.yaml\
+- service-ce-player.yaml
 - trigger-ce-viewer.yaml
