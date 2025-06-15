@@ -18,11 +18,13 @@ spec:
       - name: main
         image: quay.io/ruben/cloudevents-player:v1.3
         env:
-          # - name: BROKER_URI
-          #   value: "http://broker-ingress.knative-eventing.svc.cluster.local:80"
-          - name: BROKER_NAME
-            value: "default"
-          - name: BROKER_NAMESPACE
-            value: "simple-app"
+          # Ref: https://github.com/ruromero/cloudevents-player?tab=readme-ov-file#bind-the-service-with-the-broker
+          - name: BROKER_URI
+            value: "http://broker-ingress.knative-eventing.svc.cluster.local/default/simple-app"
+          # NOTE: You can also use these variables instead of BROKER_URI
+          # - name: BROKER_NAME
+          #   value: "default"
+          # - name: BROKER_NAMESPACE
+          #   value: "simple-app"
         ports:
         - containerPort: 8080
