@@ -20,7 +20,7 @@ spec:
         env:
           # Ref: https://github.com/ruromero/cloudevents-player?tab=readme-ov-file#bind-the-service-with-the-broker
           - name: BROKER_URI
-            value: "http://broker-ingress.knative-eventing.svc.cluster.local/default/simple-app"
+            value: "http://broker-ingress.knative-eventing.svc.cluster.local/simple-app/default"
           # NOTE: You can also use these variables instead of BROKER_URI
           # - name: BROKER_NAME
           #   value: "default"
